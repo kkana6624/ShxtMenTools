@@ -37,7 +37,7 @@ public static class IdentityDataSeeder
         {
             await roleManager.CreateAsync(new IdentityRole("Admin"));
         }
-        
+
         if (!await roleManager.RoleExistsAsync("User"))
         {
             await roleManager.CreateAsync(new IdentityRole("User"));
